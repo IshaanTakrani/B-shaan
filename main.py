@@ -127,6 +127,11 @@ async def affirmation(ctx):
 
 @client.event
 async def on_message(message):
+  '''
+  Any message that does not have a corresponding
+  function above will be redirected here.
+  see responses.py for more.
+  '''
 
     await client.process_commands(message)
 
